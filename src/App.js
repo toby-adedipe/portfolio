@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
+import ProjectList from './components/ProjectList';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
+          <Route path="/project/:projectid" component={ProjectList} />
         </div>
           
         </BrowserRouter>
