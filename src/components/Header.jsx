@@ -19,7 +19,7 @@ class Header extends Component{
         }
         const {containerStyle, linkStyle} = style
         return(
-            <div style={containerStyle}>
+            <div style={containerStyle} id="header-link">
                 <Link to="/projects" style={linkStyle}>PROJECTS</Link>
                 <Link to="/about" style={linkStyle}>ABOUT ME</Link>
                 <Link to="/contact" style={linkStyle}>CONTACT</Link>

@@ -4,6 +4,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #cccccc;
 }
+#header-link a{
+  font-weight: 700;
+}
+#header-link a:hover{
+  border-bottom: 1px solid #000;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
