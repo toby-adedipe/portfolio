@@ -27,8 +27,9 @@ class Contact extends Component{
                     <p>twizzytobby@gmail.com</p>
                     <div>
                         <a href="https://twitter.com/toby_adedipe"><img style={imageStyle} src="/images/twitter.png" alt="twitter-icon" /></a>
-                        <a href="https://medium.com/@toby_adedipe"><img style={imageStyle}  src="/images/medium.png" alt="twitter-icon" /></a>
-                        <a href="https://www.linkedin.com/in/oluwatobi-adedipe/"><img style={imageStyle}  src="/images/linkedin.png" alt="twitter-icon" /></a>
+                        <a href="https://medium.com/@toby_adedipe"><img style={imageStyle}  src="/images/medium.png" alt="medium-icon" /></a>
+                        <a href="https://www.linkedin.com/in/oluwatobi-adedipe/"><img style={imageStyle}  src="/images/linkedin.png" alt="linkedin-icon" /></a>
+                        <a href="https://github.com/toby-adedipe"><img style={imageStyle}  src="/images/github.png" alt="github-icon" /></a>
                     </div>
                 </div>
             </div>

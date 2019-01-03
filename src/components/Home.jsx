@@ -15,13 +15,14 @@ class Home extends Component{
             },
             nameStyle:{
                 fontFamily: ['Dancing Script', 'cursive'],
-                fontSize: '40px'
+                fontSize: '40px',
+                color: 'palevioletred'
             },
             containerStyle:{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginTop: '50vh'
+                marginTop: '50vh',
             },
             homeStyle: {
                 display: 'flex',
@@ -35,9 +36,8 @@ class Home extends Component{
         return(
             <div style={containerStyle}>
                 <div style={homeStyle}>
-                    <h2 style={nameStyle}>Adedipe Oluwatobi</h2>
-                    <h4 style={{margin: 0}}>Front End Developer</h4>
-                    <h4>Progressive Web App Developer</h4>
+                    <h4>Hi, I'm <span style={nameStyle}>Adedipe Oluwatobi</span></h4>
+                    <h4 style={{textAlign: 'justify', width: '90vw'}}>A Front End Developer and Progressive Web App Developer based in lagos. Check out the projects I've worked on. :)</h4>
                 </div>
                 <Link to="/projects"><button style={buttonStyle}>PROJECTS</button></Link>
             </div>

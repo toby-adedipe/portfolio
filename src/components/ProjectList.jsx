@@ -33,7 +33,7 @@ const ProjectList = (props) =>{
                     >
                         <div style={divStyle}>
                             <div>
-                                <img style={imgStyle} key={item.img} src={`/images/${item.img}`} />
+                                <img style={imgStyle} key={item.img} src={`/images/${item.img}`} alt="projects"/>
                             </div>
                             <div style={nameStyle}>
                                 <h3 >{item.name}</h3>

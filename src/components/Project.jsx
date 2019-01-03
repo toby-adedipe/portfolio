@@ -43,7 +43,7 @@ class Project extends Component{
                 <Header />
                 <div style={containerStyle}>
                     <h3>{this.state.project.name}</h3>
-                    <img style={{ width: '40vw', height: '40vw'}}src={`/images/${this.state.project.img}`} />
+                    <img style={{ width: '40vw', height: '40vw'}}src={`/images/${this.state.project.img}`} alt="individual-projects"/>
                     <p style={{width: '90vw', textAlign: 'justify'}}>{this.state.project.desc}</p>
                     <h4 style={{margin: 0}}>Tools Used include:</h4>
                     <p>{this.state.project.tools}</p>
