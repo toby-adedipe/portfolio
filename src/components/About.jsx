@@ -32,14 +32,14 @@ class About extends Component{
             <div>
                 <Header />
                 <div style={containerStyle}>
-                    <h4 style={centerStyle}>I'm Adedipe Oluwatobi, a front-end Web Developer and mobile-web specialist(I build majorly for mobile) this includes making sure my web applications work in areas with slow network or even offline and making sure the applications are responsive</h4>
+                    <h4 style={centerStyle}>I'm Adedipe Oluwatobi, a front-end Web Developer and mobile-web specialist(I build majorly for mobile) this includes making sure my web applications work in areas with slow network or even offline and making sure the applications are responsive.</h4>
                     <div>
                         <div style={containerStyle}>
                             <h1 style={headerStyle}>SPECIALTIES</h1>
                             <div style={containerStyle}>
                                 <img src="/images/frontend.png" style={{width:'50vw'}} alt="frontend"/>
                                 <h3 style={topicStyle}>Front End Web Developement</h3>
-                                <h4 style={centerStyle}> I also build the front end of web-applications using <span style={{color: "palevioletred"}}>HTML, CSS </span>and Front-End Javacript Frameworks like <span style={{color: "palevioletred"}}>React.Js</span> and <span style={{color: "palevioletred"}}>Next.js</span> </h4>
+                                <h4 style={centerStyle}> I also build the front end of web-applications using <span style={{color: "palevioletred"}}>HTML, CSS </span>and Front-End Javacript Frameworks like <span style={{color: "palevioletred"}}>React.Js</span> and <span style={{color: "palevioletred"}}>Next.js</span>.</h4>
                             </div>
                             <div style={containerStyle}>
                                 <img src="/images/responsive.png" style={{width:'50vw'}} alt="responsive"/>
