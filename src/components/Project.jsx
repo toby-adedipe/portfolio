@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 
 import Header from './Header';
 import projects from './list';
@@ -41,14 +42,28 @@ class Project extends Component{
         return(
             <div>
                 <Header />
-                <div style={containerStyle}>
-                    <h3>{this.state.project.name}</h3>
-                    <img style={{ width: '40vw', height: '40vw'}}src={`/images/${this.state.project.img}`} alt="individual-projects"/>
-                    <p style={{width: '90vw', textAlign: 'justify'}}>{this.state.project.desc}</p>
-                    <h4 style={{margin: 0}}>Tools Used include:</h4>
-                    <p>{this.state.project.tools}</p>
-                    <a href={`${this.state.project.link}`} style={{textDecoration: 'none'}}><button style={buttonStyle}>Visit</button></a>
-                </div>
+                <MediaQuery maxDeviceWidth={480}>
+                    <div style={containerStyle}>
+                        <h3>{this.state.project.name}</h3>
+                        <img style={{ width: '40vw', height: '40vw'}}src={`/images/${this.state.project.img}`} alt="individual-projects"/>
+                        <p style={{width: '90vw', textAlign: 'justify'}}>{this.state.project.desc}</p>
+                        <h4 style={{margin: 0}}>Tools Used include:</h4>
+                        <p>{this.state.project.tools}</p>
+                        <a href={`${this.state.project.link}`} style={{textDecoration: 'none'}}><button style={buttonStyle}>Visit</button></a>
+                    </div>
+                </MediaQuery>
+                
+
+                <MediaQuery minDeviceWidth={480}>
+                    <div style={containerStyle}>
+                        <h3>{this.state.project.name}</h3>
+                        <img style={{ width: '100px', height: '100px'}}src={`/images/${this.state.project.img}`} alt="individual-projects"/>
+                        <p style={{width: '60vw', textAlign: 'justify'}}>{this.state.project.desc}</p>
+                        <h4 style={{margin: 0}}>Tools Used include:</h4>
+                        <p>{this.state.project.tools}</p>
+                        <a href={`${this.state.project.link}`} style={{textDecoration: 'none'}}><button style={buttonStyle}>Visit</button></a>
+                    </div>
+                </MediaQuery>
             </div>
         )
     }
