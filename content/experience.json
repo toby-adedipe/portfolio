@@ -1,0 +1,56 @@
+{
+  "roles": [
+    {
+      "title": "Senior Full-stack / AI Engineer",
+      "company": "AI Work",
+      "period": "September 2025 - Present",
+      "highlights": [
+        "Built an AI assistant that routes accounting questions to the right specialist automatically",
+        "Made it so the AI actually understands what \"revenue\" or \"expenses\" mean in context",
+        "Added controls so teams only see AI features they're paying for",
+        "Set up tracking to know when the AI is slow or failing"
+      ]
+    },
+    {
+      "title": "Senior AI Product Engineer (Web and Mobile)",
+      "company": "Lafarge",
+      "period": "January 2024 - Present",
+      "highlights": [
+        "Built a system that recommends which truck to send for each delivery, replacing manual guesswork",
+        "Created a chat interface where ops managers can ask questions in plain English and get answers",
+        "Turned dispatcher expertise into 45+ commands the AI can run on its own",
+        "Built a data pipeline in Go that processes truck location events in real-time"
+      ]
+    },
+    {
+      "title": "AI Product Engineer",
+      "company": "Caden",
+      "period": "January 2023 - December 2023",
+      "highlights": [
+        "Built the frontend for an AI email writer that turns templates into ready-to-send messages",
+        "Created backend services that process document templates and plug into the AI",
+        "Shipped components for uploading templates and managing AI interactions"
+      ]
+    },
+    {
+      "title": "Full-stack Engineer (Web and Mobile)",
+      "company": "Gavel GmbH (YC 2021)",
+      "period": "July 2021 - October 2022",
+      "highlights": [
+        "Built the live auction experience for web and mobile—thousands of people bidding at once",
+        "Created the real-time video streaming and event system",
+        "Shipped features like messaging, search, and payments with Stripe"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Portee",
+      "period": "August 2020 - July 2021",
+      "highlights": [
+        "Built two complete mobile apps with 100+ screens each",
+        "Added login systems and real-time data sync",
+        "Made the apps work offline with clear \"syncing\" feedback"
+      ]
+    }
+  ]
+}

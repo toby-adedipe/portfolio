@@ -1,0 +1,11 @@
+{
+  "slug": "realtime-speech-translator",
+  "title": "Real-Time 2-Way Speech Translator",
+  "company": "Independent",
+  "summary": "Low-latency English <-> Mandarin speech translator with streaming transcription, automatic language detection, and natural voice synthesis",
+  "description": "Production-ready, low-latency speech translation app enabling real-time English <-> Mandarin conversations. The system streams microphone audio to a custom WebSocket server, performs live transcription with interim results, translates in context, and synthesizes speech back to the user.\n\n**Key Technical Achievements:**\n- Bidirectional audio streaming with a custom Node.js WebSocket server\n- Deepgram Nova-3 streaming transcription at 16kHz linear16 with endpointing\n- Automatic language detection per utterance (English/Mandarin)\n- GPT-4o-mini translation with streaming UI updates\n- Sequential TTS playback queue to prevent overlap\n\n**Performance:**\n- End-to-end response under 2s in typical conversations\n- Chunked audio processing and buffering for low latency\n\n**Frontend Architecture:**\n- React hooks for streaming pipeline, transcription, audio capture, and voice detection\n- Real-time UI state machine (idle -> listening -> translating -> speaking)\n- Progressive transcript and translation rendering\n\n**Backend Integration:**\n- WebSocket proxy for audio streaming\n- Multiple concurrent API connections (Deepgram + OpenAI)\n- Robust error handling and connection lifecycle management",
+  "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "WebSocket", "Deepgram", "OpenAI", "Audio Processing", "Vercel"],
+  "featured": true,
+  "order": 2,
+  "demo": "https://2-way-realtime-translator.vercel.app/"
+}

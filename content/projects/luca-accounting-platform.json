@@ -1,0 +1,11 @@
+{
+  "slug": "luca-accounting-platform",
+  "title": "Luca Accounting Platform",
+  "company": "AI Work",
+  "summary": "AI-powered multi-tenant accounting SaaS with natural language queries, full double-entry bookkeeping, and automated financial reporting",
+  "description": "Luca is a full-stack accounting platform for SMBs that combines traditional bookkeeping with AI-powered insights.\n\n**What it does:**\n- Multi-company workspaces with team collaboration and role-based access\n- Full double-entry accounting: chart of accounts, journal entries, general ledger\n- Financial reports: P&L, Balance Sheet, Cash Flow, expense breakdowns\n- Sales & purchasing: quotes, invoices, payments, vendor management\n- Inventory with batch tracking, price lists, and stock valuation\n- Bank reconciliation and payment tracking\n- Fixed asset management with automated depreciation\n- Tax compliance including VAT and GSTR-1 reporting\n\n**AI Integration:**\n- Chat interface for asking questions about your finances in plain English\n- LLM-friendly API endpoints that let the AI understand accounting context\n- Natural language queries that translate to real financial insights\n\n**Technical Highlights:**\n- Next.js 15 with React 19 and Server Components\n- Node.js/Express backend with PostgreSQL and Sequelize\n- Supabase Auth with JWT tokens and role-based access\n- 46+ database models, 40+ API route modules\n- Real-time updates and responsive design\n- Production-ready security: rate limiting, input validation, audit logging",
+  "tech": ["Next.js 15", "React 19", "TypeScript", "Node.js", "Express", "PostgreSQL", "Supabase Auth", "AWS S3", "TailwindCSS", "React Query", "Recharts", "Framer Motion"],
+  "featured": true,
+  "order": 2,
+  "demo": "https://www.ai-wk.com/"
+}
