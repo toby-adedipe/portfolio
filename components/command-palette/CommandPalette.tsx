@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
+import { useProjectPanel } from "@/components/projects/ProjectPanelContext";
 
 interface SearchResult {
   type: "project" | "experience";
@@ -33,6 +34,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
+  const { openProjectBySlug } = useProjectPanel();
 
   // Typewriter placeholder effect
   useEffect(() => {
@@ -146,7 +148,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
   const handleSelect = (result: SearchResult) => {
     if (result.type === "project" && result.slug) {
-      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+      openProjectBySlug(result.slug);
     } else if (result.type === "experience") {
       document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
     }

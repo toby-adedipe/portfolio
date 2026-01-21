@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
 import { ExplanationPanel } from "./ExplanationPanel";
 import type { Project } from "@/lib/types";
+import { useProjectPanel } from "@/components/projects/ProjectPanelContext";
 
 interface ProjectGridProps {
   projects: Project[];
@@ -13,16 +14,27 @@ interface ProjectGridProps {
 export function ProjectGrid({ projects }: ProjectGridProps) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
+  const { selectedProjectSlug, openProjectBySlug, clearProject } = useProjectPanel();
 
   const handleExplain = (project: Project) => {
-    setSelectedProject(project);
-    setIsPanelOpen(true);
+    openProjectBySlug(project.slug);
   };
 
   const handleClosePanel = () => {
     setIsPanelOpen(false);
     setTimeout(() => setSelectedProject(null), 300);
+    clearProject();
   };
+
+  useEffect(() => {
+    if (!selectedProjectSlug) return;
+    const nextProject = projects.find(
+      (project) => project.slug === selectedProjectSlug
+    );
+    if (!nextProject) return;
+    setSelectedProject(nextProject);
+    setIsPanelOpen(true);
+  }, [projects, selectedProjectSlug]);
 
   return (
     <section id="projects" className="py-section">

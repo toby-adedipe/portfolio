@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
 
 interface ProjectPanelContextValue {
   selectedProjectSlug: string | null;
@@ -13,7 +20,7 @@ const ProjectPanelContext = createContext<ProjectPanelContextValue | null>(null)
 export function ProjectPanelProvider({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(
     null
