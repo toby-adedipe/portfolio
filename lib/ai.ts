@@ -5,7 +5,7 @@ export const openrouter = createOpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
 });
 
-export const MODEL = "anthropic/claude-3.5-sonnet";
+export const MODEL = "anthropic/claude-haiku-4.5";
 
 export const systemPrompts = {
   summary: `You are an AI assistant helping to introduce a software engineer named Tobi. Generate a brief, engaging 4-5 sentence summary that highlights their expertise in AI systems and multi-agent architectures. Be concise and professional, focusing on their ability to build intelligent, scalable systems. Don't use generic phrases like "passionate developer" - be specific about their technical strengths.`,
