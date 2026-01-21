@@ -90,7 +90,7 @@ export function ProjectCard({ project, onExplain }: ProjectCardProps) {
           <span className="w-4 h-4 rounded-full bg-ai-glow/20 flex items-center justify-center group-hover/btn:bg-ai-glow/30 transition-colors">
             <span className="w-1.5 h-1.5 rounded-full bg-ai-glow" />
           </span>
-          Watch me explain this
+          Deep Dive
         </button>
       )}
     </motion.article>
