@@ -33,7 +33,7 @@ export function Navigation({ name }: NavigationProps) {
           isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : ""
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             <button
               onClick={() => scrollTo("hero")}

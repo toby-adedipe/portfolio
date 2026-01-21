@@ -13,19 +13,19 @@ export default async function Home() {
 
   return (
     <>
-      <main className="min-h-screen pt-16">
-        <div id="hero" className="max-w-6xl mx-auto px-6 lg:px-8">
+      <main className="min-h-screen pt-16 overflow-x-hidden w-full">
+        <div id="hero" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <Hero profile={profile} />
           <ProjectGrid projects={projects} />
           <Timeline experience={experience} />
 
           {/* Contact Section */}
           <section id="contact" className="py-section">
-            <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+            <div className="max-w-2xl w-full">
+              <h2 className="text-2xl md:text-4xl font-bold text-text-primary mb-4 break-words">
                 Get in Touch
               </h2>
-              <p className="text-text-secondary text-lg mb-8">
+              <p className="text-text-secondary text-base md:text-lg mb-8 break-words">
                 Interested in working together? I&apos;m always open to discussing
                 new projects, creative ideas, or opportunities to be part of your
                 vision.

@@ -19,9 +19,9 @@ export function ProjectCard({ project, onExplain }: ProjectCardProps) {
       transition={{ duration: 0.3 }}
       className="group h-full flex flex-col bg-surface border border-border rounded-xl p-6 hover:border-accent/30 hover:shadow-card-hover transition-all duration-300"
     >
-      <div className="flex items-start justify-between mb-3">
-        <span className="text-sm font-mono text-accent">{project.company}</span>
-        <div className="flex gap-2">
+      <div className="flex items-start justify-between mb-3 gap-2">
+        <span className="text-sm font-mono text-accent break-words flex-1 min-w-0">{project.company}</span>
+        <div className="flex gap-2 shrink-0">
           {project.github && (
             <a
               href={project.github}
@@ -65,11 +65,11 @@ export function ProjectCard({ project, onExplain }: ProjectCardProps) {
         </div>
       </div>
 
-      <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-accent transition-colors">
+      <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-accent transition-colors break-words">
         {project.title}
       </h3>
 
-      <p className="text-text-secondary mb-4 line-clamp-2">{project.summary}</p>
+      <p className="text-text-secondary mb-4 line-clamp-2 break-words">{project.summary}</p>
 
       <div className="flex flex-wrap gap-2 mb-4 flex-grow">
         {project.tech.slice(0, 4).map((tech) => (

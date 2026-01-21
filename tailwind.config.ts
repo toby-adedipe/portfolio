@@ -23,7 +23,7 @@ const config: Config = {
       },
       fontSize: {
         "hero": ["4rem", { lineHeight: "1.1", fontWeight: "700" }],
-        "hero-sm": ["2.5rem", { lineHeight: "1.2", fontWeight: "700" }],
+        "hero-sm": ["2rem", { lineHeight: "1.2", fontWeight: "700" }],
       },
       spacing: {
         "section": "5rem",

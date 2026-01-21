@@ -178,15 +178,15 @@ export function ExplanationPanel({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed right-0 top-0 bottom-0 w-full max-w-xl bg-surface border-l border-border z-50 overflow-y-auto"
+            className="fixed right-0 top-0 bottom-0 w-full max-w-xl bg-surface border-l border-border z-50 overflow-y-auto overflow-x-hidden"
           >
-            <div className="p-6 md:p-8">
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <span className="text-sm font-mono text-accent block mb-1">
+            <div className="p-4 sm:p-6 md:p-8 max-w-full">
+              <div className="flex items-start justify-between mb-6 gap-4">
+                <div className="flex-1 min-w-0">
+                  <span className="text-sm font-mono text-accent block mb-1 break-words">
                     {project.company}
                   </span>
-                  <h2 className="text-2xl font-bold text-text-primary">
+                  <h2 className="text-xl sm:text-2xl font-bold text-text-primary break-words">
                     {project.title}
                   </h2>
                 </div>
@@ -249,7 +249,7 @@ export function ExplanationPanel({
                     value={followUpQuestion}
                     onChange={(e) => setFollowUpQuestion(e.target.value)}
                     placeholder="Ask about tradeoffs, latency, scaling..."
-                    className="flex-1 bg-background border border-border rounded-md px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    className="flex-1 bg-background border border-border rounded-md px-3 py-2 text-base text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent/50 min-w-0"
                     disabled={activeFollowUpId !== null}
                     aria-label="Follow-up question"
                   />
@@ -259,7 +259,7 @@ export function ExplanationPanel({
                       activeFollowUpId !== null ||
                       followUpQuestion.trim().length === 0
                     }
-                    className="px-4 py-2 text-sm font-semibold bg-accent text-background rounded-md hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    className="px-4 py-2 text-sm font-semibold bg-accent text-background rounded-md hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shrink-0"
                   >
                     Ask
                   </button>

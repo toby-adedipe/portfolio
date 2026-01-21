@@ -30,11 +30,11 @@ export function RoleCard({ role, isLast = false }: RoleCardProps) {
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-          <div>
-            <h3 className="text-lg font-semibold text-text-primary">
+          <div className="flex-1 min-w-0">
+            <h3 className="text-lg font-semibold text-text-primary break-words">
               {role.title}
             </h3>
-            <p className="text-accent font-medium">{role.company}</p>
+            <p className="text-accent font-medium break-words">{role.company}</p>
           </div>
           <span className="text-sm font-mono text-text-secondary shrink-0">
             {role.period}
@@ -58,8 +58,8 @@ export function RoleCard({ role, isLast = false }: RoleCardProps) {
                   transition={{ delay: idx * 0.1 }}
                   className="flex items-start gap-2 text-text-secondary"
                 >
-                  <span className="text-accent mt-1.5">-</span>
-                  <span>{highlight}</span>
+                  <span className="text-accent mt-1.5 shrink-0">-</span>
+                  <span className="break-words">{highlight}</span>
                 </motion.li>
               ))}
             </motion.ul>

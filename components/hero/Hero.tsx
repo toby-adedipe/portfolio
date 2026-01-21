@@ -20,9 +20,9 @@ export function Hero({ profile }: HeroProps) {
   };
 
   return (
-    <section className="min-h-[90vh] py-section flex items-center">
+    <section className="min-h-[90vh] py-section flex items-center overflow-hidden">
       <div className="grid w-full items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-        <div className="max-w-2xl lg:pr-8">
+        <div className="max-w-2xl lg:pr-8 w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export function Hero({ profile }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-hero-sm md:text-hero font-bold text-text-primary mb-4"
+            className="text-hero-sm md:text-hero font-bold text-text-primary mb-4 break-words"
           >
             {profile.name}
           </motion.h1>
@@ -46,7 +46,7 @@ export function Hero({ profile }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="text-2xl md:text-4xl font-semibold text-text-secondary mb-6"
+            className="text-xl md:text-4xl font-semibold text-text-secondary mb-6 break-words"
           >
             {profile.title}
           </motion.h2>
@@ -55,7 +55,7 @@ export function Hero({ profile }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-accent mb-8"
+            className="text-lg md:text-xl text-accent mb-8 break-words"
           >
             {profile.tagline}
           </motion.p>

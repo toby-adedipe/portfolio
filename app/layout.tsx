@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     description: "AI-powered portfolio showcasing multi-agent engineering skills",
     type: "website",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({

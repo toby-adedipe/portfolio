@@ -37,17 +37,17 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   }, [projects, selectedProjectSlug]);
 
   return (
-    <section id="projects" className="py-section">
+    <section id="projects" className="py-section w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-12"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-text-primary mb-4 break-words">
           Featured Projects
         </h2>
-        <p className="text-text-secondary text-lg max-w-2xl">
+        <p className="text-text-secondary text-base md:text-lg max-w-2xl break-words">
           A selection of projects showcasing my work in AI systems, multi-agent
           architectures, and scalable applications.
         </p>
