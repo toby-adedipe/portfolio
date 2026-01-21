@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <!-- Glow filter for the AI node -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- T lettermark in teal -->
+  <path d="M4 6 L4 11 L13 11 L13 26 L19 26 L19 11 L28 11 L28 6 Z" fill="#2dd4bf"/>
+
+  <!-- AI node with glow in purple -->
+  <circle cx="26" cy="6" r="4" fill="#a78bfa" filter="url(#glow)"/>
+</svg>
