@@ -35,7 +35,7 @@ Tech Stack: ${project.tech.join(", ")}
       model: openrouter(MODEL),
       system: systemPrompts.explain,
       prompt,
-      maxTokens: 1024,
+      maxTokens: 2048,
     });
 
     return result.toTextStreamResponse();
