@@ -63,9 +63,9 @@ export function LiveSummary() {
           {error}
         </span>
       )}
-      <div className="flex items-start gap-2">
+      <div className="flex items-start gap-2 min-w-0">
         <span className="text-ai-glow text-sm font-mono shrink-0 mt-1">AI</span>
-        <p className="text-lg text-text-secondary leading-relaxed">
+        <p className="flex-1 min-w-0 text-base md:text-lg text-text-secondary leading-relaxed break-words summary-clamp">
           <StreamingText
             text={summary}
             isStreaming={isStreaming}

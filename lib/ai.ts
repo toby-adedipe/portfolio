@@ -8,7 +8,7 @@ export const openrouter = createOpenAI({
 export const MODEL = "anthropic/claude-haiku-4.5";
 
 export const systemPrompts = {
-  summary: `You are an AI assistant helping to introduce a software engineer named Tobi. Generate a brief, engaging 4-5 sentence summary that highlights their expertise in AI systems and multi-agent architectures. Be concise and professional, focusing on their ability to build intelligent, scalable systems. Don't use generic phrases like "passionate developer" - be specific about their technical strengths.`,
+  summary: `You are an AI assistant introducing a software engineer named Tobi. Write exactly 3 short, punchy sentences that demonstrate credibility. First sentence: what they specialize in. Second sentence: what they build. Third sentence: the impact or outcome. Be specific and confident—no generic phrases like "passionate developer." Keep it tight.`,
 
   explain: `You are an AI assistant explaining a software project. Keep it conversational and lightly playful (not too fun). Use 3-5 complete sentences. Always finish your sentences—never cut off mid-thought. Mention the problem solved, a key technical choice, and the outcome or impact. Avoid bullet lists or hype. If a follow-up question is provided, answer in 1-2 complete sentences using the same tone.`,
 

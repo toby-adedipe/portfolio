@@ -13,7 +13,7 @@ export function RoleCard({ role, isLast = false }: RoleCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="relative pl-8 pb-8">
+    <div className="relative pl-6 sm:pl-8 pb-8">
       {/* Timeline line */}
       {!isLast && (
         <div className="absolute left-[7px] top-3 bottom-0 w-px bg-border" />
@@ -29,14 +29,12 @@ export function RoleCard({ role, isLast = false }: RoleCardProps) {
         className="bg-surface border border-border rounded-lg p-5 hover:border-accent/30 transition-colors cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-          <div className="flex-1 min-w-0">
-            <h3 className="text-lg font-semibold text-text-primary break-words">
-              {role.title}
-            </h3>
-            <p className="text-accent font-medium break-words">{role.company}</p>
-          </div>
-          <span className="text-sm font-mono text-text-secondary shrink-0">
+        <div className="mb-2">
+          <h3 className="text-lg font-semibold text-text-primary break-words">
+            {role.title}
+          </h3>
+          <p className="text-accent font-medium break-words">{role.company}</p>
+          <span className="text-sm font-mono text-text-secondary mt-1 block">
             {role.period}
           </span>
         </div>
